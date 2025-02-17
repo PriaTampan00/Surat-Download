@@ -1,13 +1,12 @@
+function printContainer() {
+    var printContents = document.getElementById('printableContainer').innerHTML;
+    var originalContents = document.body.innerHTML;
 
-function printToPDF() {
+    document.body.innerHTML = printContents;
+
     window.print();
-}
 
-function saveAsPDF() {
-    // Gunakan library jsPDF untuk menyimpan sebagai PDF
-    const doc = new jsPDF();
-    doc.text("Hello world!", 10, 10);
-    doc.save("document.pdf");
+    document.body.innerHTML = originalContents;
 }
 
 function downloadContainerAsPDF() {
