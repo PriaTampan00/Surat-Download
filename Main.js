@@ -10,8 +10,8 @@ function saveAsPDF() {
     doc.save("document.pdf");
 }
 
-function downloadAsPDF() {
-    const element = document.body;
-    html2pdf(element);
+function downloadContainerAsPDF() {
+    const element = document.querySelector('.container');
+    html2pdf().from(element).save();
 }
 
