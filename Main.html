@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Surat</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="Main.css">
+    </head>
+    
+<body>
+    <div class="tombol">
+
+        <button onclick="printToPDF()">Print to PDF</button>
+        <button onclick="saveAsPDF()">Save as PDF</button>
+        <button onclick="downloadAsPDF()">Download as PDF</button>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>SURAT IZIN SAKIT</h1>
+            <p>Kepada Yth.,</p>
+            <p>Bapak/Ibu Dosen</p>
+            <p>Di Universitas Ma'soem</p>
+        </div>
+        <div class="content">
+            <p>Dengan hormat,</p>
+            <p>Saya yang bertanda tangan dibawah ini:</p>
+            <ul>
+                <p>Nama: [Nama Mahasiswa]</p>
+                <p>NIM: [NIM]</p>
+                <p>Prodi: [Prodi]</p>
+                <p>Fakultas: [Fakultas]</p>
+            </ul>
+            <div class="isi">
+                <p>Tidak dapat mengikuti perkuliahan untuk mata kuliah [Mata Kuliah] pada tanggal [Tanggal] yang bapa/ibu ampu,
+                    dikarenakan sedang ada kepentingan keluarga. Berhubung betapa pentingnya acara ini sehingga saya menyesal
+                    sekali tidak dapat mengikuti perkuliahan [Mata Kuliah]. Apabila ada tugas, saya akan mengerjakan pada hari
+                    berikutnya setelah saya masuk kuliah kembali.
+                </p>
+                <p>Demikian surat izin ini saya buat sebenar-benarnya. Mohon bapak/ibu dapat memakluminya. 
+                    Atas perhatian dan kebijaksanaannya saya ucapkan terima kasih.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="tanggal">
+                <p>Bandung, 17 Februari 2025</p>
+            </div>
+            <p>Hormat saya,</p>
+            <br><br>
+            <p>[Nama Wali]</p>
+        </div>
+</body>
+<script src="Main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</html>

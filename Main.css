@@ -1,0 +1,37 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 2cm;
+}
+.container {
+    background-color: #ffffff;
+    color: #000000;
+    width: 21cm;
+    height: 29.7cm;
+    margin: auto;
+    padding: 2cm;
+    box-sizing: border-box;
+}
+.header, .content, .footer {
+    margin-bottom: 1cm;
+}
+
+.header h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.content .isi{
+    text-align: justify;
+}
+
+.footer .tanggal{
+    text-align: right;
+}
+
+.tombol{
+    padding: 10px;
+}
